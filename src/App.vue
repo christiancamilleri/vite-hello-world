@@ -1,5 +1,7 @@
 <script >
 import AppTitle from './components/AppTitle.vue'
+import AppHero from './components/AppHero.vue'
+
 
 export default {
   data() {
@@ -9,14 +11,20 @@ export default {
   },
   components: {
     AppTitle,
+    AppHero,
   }
 }
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <AppTitle></AppTitle>
+    <AppHero></AppHero>
   </div>
 </template>
 
-<style ></style>
+<style>
+.container {
+  text-align: center;
+}
+</style>
